@@ -8,3 +8,8 @@
 
 nächstes Treffen: Donnerstag 19.11.2026
 - jeder testet erstmal 2 Mailserver und dokumentiert Erfahrungen
+	- Egal ob Komplett oder eigenes Programm
+	- bitte Suites und Einzelkomponeten beides anschauen
+- Ziel nächstes Treffen
+	- jeder stellt zwei Server vor
+	- jeder zieht einen Server hoch, die am Ende miteinander per VPN Mails austauschen können
