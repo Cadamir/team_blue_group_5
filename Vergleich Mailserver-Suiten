@@ -1,0 +1,34 @@
+Mailcow
+-> All-In-One-Suite/Groupware; enthält Postfix + Dovecot (+X); vollständige Liste der Komponenten: https://docs.mailcow.email/#what-is-mailcow-dockerized
+-> ausschließlich als Docker-Container, jede Komponente = 1 Docker-Container
+-> Systemvoraussetzungen: 1 Ghz CPU, 7 GB RAM, 20 GiB HDD/SSD ohne Nutzdaten ; siehe https://docs.mailcow.email/getstarted/prerequisite-system/
+-> offizielle Install-Doku inkl. Download: https://docs.mailcow.email/de/getstarted/install/
+-> Pro/Con: Umfangreich, aktiv weiterentwickelt ABER relativ schwergewichtig
+
+Mailu
+-> All-In-One-Suite; enthält Postfix + Dovecot (+X); vollständige Liste der Komponenten: tbd
+-> ausschließlich als Docker-Container, jede Komponente = 1 Docker-Container
+-> Systemvoraussetzungen: 2 bzw 4 GB RAM (ohne/mit ClamAV) ; siehe https://mailu.io/master/compose/requirements.html
+-> offizielle Install-Doku inkl. Download: https://mailu.io/2024.06/compose/setup.html
+-> Pro/Con: leichtgewichtig ABER letzter Release von 2024
+
+mail-in-a-box
+-> All-In-One-Suite/Groupware; enhält Postfix + Dovecot (+X); 
+-> wandelt "jungfräuliche" Linux-Maschine in Mailserver-Suite um
+-> Systemvoraussetzungen: 1 GB RAM ; siehe https://mailinabox.email/guide.html#machine
+-> offizielle Install-Doku: https://mailinabox.email/guide.html#setup
+-> Pro/Con: umfangreich/dafür leichtgewichtig, aktiv weiterentwickelt ABER verm. für Betrieb als Cloud-VM ausgelegt
+
+docker-mailserver ("dms")
+-> All-In-One-Suite; enthält Postfix, Dovecot (+X); "vollständige" Liste der Komponenten: https://docker-mailserver.github.io/docker-mailserver/latest/introduction/#components
+-> ausschließlich als Docker-Container (alle Komponenten in einem Container)
+-> Systemvoraussetzungen: 1 vCore, 0,5 bzw 2 GB RAM (ohne/mit ClamAV) ; siehe https://docker-mailserver.github.io/docker-mailserver/latest/faq/#what-are-the-system-requirements
+-> offizielle Install-Doku: https://docker-mailserver.github.io/docker-mailserver/latest/usage/#deploying-the-actual-image
+-> Pro/Con: umfangreich/dafür leichtgewichtig, aktiv weiterentwickelt ABER ?
+
+stalwart
+-> All-In-One-Suite, geschrieben in Rust
+-> Docker-Container oder reguläre Installation auf Linux
+-> Systemvoraussetzungen: nicht exakt spezifiert ; siehe https://stalw.art/docs/install/requirements/
+-> offizielle Install-Doku: https://stalw.art/docs/install/platform/linux/ bzw. https://stalw.art/docs/install/platform/docker/
+-> Pro/Con: wohl sehr performant ABER Maintainer = one man show?
