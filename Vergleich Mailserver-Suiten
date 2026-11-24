@@ -17,7 +17,7 @@ mail-in-a-box
 -> wandelt "jungfräuliche" Linux-Maschine in Mailserver-Suite um
 -> Systemvoraussetzungen: 1 GB RAM ; siehe https://mailinabox.email/guide.html#machine
 -> offizielle Install-Doku: https://mailinabox.email/guide.html#setup
--> Pro/Con: umfangreich/dafür leichtgewichtig, aktiv weiterentwickelt ABER verm. für Betrieb als Cloud-VM ausgelegt
+-> Pro/Con: umfangreich/dafür leichtgewichtig, aktiv weiterentwickelt ABER verm. für Betrieb als Cloud-VM ausgelegt (feste globale IP-Adresse der Maschine selbst usw.)
 
 docker-mailserver ("dms")
 -> All-In-One-Suite; enthält Postfix, Dovecot (+X); "vollständige" Liste der Komponenten: https://docker-mailserver.github.io/docker-mailserver/latest/introduction/#components
