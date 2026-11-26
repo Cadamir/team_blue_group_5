@@ -1,0 +1,5 @@
+---
+- import_playbook: adduser.yml
+- import_playbook: postfix.yml
+- import_playbook: dovecot.yml
+- import_playbook: ufw.yml

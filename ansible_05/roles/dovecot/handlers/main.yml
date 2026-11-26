@@ -1,0 +1,7 @@
+#SPDX-License-Identifier: MIT-0
+---
+# handlers file for roles/postfix
+- name: Dovecot neustarten
+  ansible.builtin.service:
+    name: dovecot
+    state: restarted

@@ -1,0 +1,56 @@
+
+compatibility_level = 3.9
+
+myorigin = $mydomain
+
+smtpd_banner = $myhostname ESMTP $mail_name (Ubuntu)
+
+inet_protocols = all
+
+mynetworks_style = host
+
+mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 {{mail_network}}
+
+mydestination = $myhostname, smtp1, localhost.localdomain, , localhost, {{mail_domain}}
+
+mailbox_size_limit = 0
+
+mailbox_command = 
+
+alias_maps = hash:/etc/aliases
+
+alias_database = hash:/etc/aliases
+
+biff = no
+
+recipient_delimiter = +
+
+# A host to send "other" mail to
+#relayhost = $mydomain
+#relayhost = [gateway.example.com]
+#relayhost = [ip.add.re.ss]:port
+#relayhost = uucphost
+relayhost = 
+
+
+cyrus_sasl_config_path = /etc/postfix/sasl
+
+
+smtpd_tls_key_file = /etc/ssl/private/ssl-cert-snakeoil.key
+smtpd_tls_cert_file = /etc/ssl/certs/ssl-cert-snakeoil.pem
+
+smtpd_tls_security_level = may
+
+
+
+smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
+
+smtp_tls_security_level = may
+
+smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
+smtpd_relay_restrictions = permit_mynetworks permit_sasl_authenticated defer_unauth_destination
+myhostname = {{mail_hostname}}
+mydomain = {{mail_domain}}
+home_mailbox = Maildir/
+inet_interfaces = all
+

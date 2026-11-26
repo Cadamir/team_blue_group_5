@@ -1,0 +1,12 @@
+---
+mail_network: 192.168.0.0/24
+mail_hostname: smtp1.lukas05.lab
+mail_domain: lukas05.lab
+
+open_ports:
+  - { port: "25", proto: "tcp" }
+  - { port: "143", proto: "tcp" }
+
+add_users:
+  - { name: "lukas", password: "x" }
+  - { name: "tom", password: "x" }

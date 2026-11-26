@@ -1,0 +1,6 @@
+---
+- name: Dovecot installieren
+  hosts: mailserver
+  become: true
+  roles:
+    - dovecot

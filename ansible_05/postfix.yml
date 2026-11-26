@@ -1,0 +1,6 @@
+---
+- name: Postfix installieren
+  hosts: mailserver
+  become: true
+  roles:
+    - postfix

@@ -1,0 +1,14 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for roles/postfix
+
+- name: User erstellen
+  ansible.builtin.user:
+    name: "{{item.name}}"
+    password: "{{item.password | password_hash('sha512')}}"
+    update_password: on_create
+    create_home: true
+    #shell: /bin/bash
+    shell: /bin/sbin/nologin  # Kein Zugriff auf Server aber ssh trd möglich im Prinzip
+  loop: "{{add_users}}"
+  tags: add_user

@@ -1,0 +1,6 @@
+---
+- name: UFW Port öffnen
+  hosts: mailserver
+  become: true
+  roles:
+    - ufw

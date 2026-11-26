@@ -1,0 +1,6 @@
+---
+- name: User erstellen
+  hosts: mailserver
+  become: true
+  roles:
+    - adduser

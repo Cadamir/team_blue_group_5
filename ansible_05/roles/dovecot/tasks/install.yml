@@ -1,0 +1,9 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for roles/postfix
+- name: Install Dovecot
+  ansible.builtin.apt:
+    name:
+      - dovecot-core
+      - dovecot-imapd
+    state: present

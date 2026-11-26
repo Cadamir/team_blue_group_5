@@ -1,0 +1,11 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for roles/postfix
+
+- name: UFW konfigurieren
+  community.general.ufw:
+    rule: allow
+    port: "{{item.port}}"
+    proto: "{{item.proto}}"
+  loop: "{{open_ports}}"
+  tags: ufw
